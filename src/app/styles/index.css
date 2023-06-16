@@ -1,0 +1,81 @@
+@import url("modern-normalize/modern-normalize.css");
+
+:root {
+  /* Typograhy */
+  --font-sans: "Iner", sans-serif;
+}
+
+/* 
+  1. Более интуитивное использование box-sizing
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 
+  2. Убрать margin
+*/
+* {
+  margin: 0;
+}
+
+/* 
+  3. 100% высоты для html и для body
+*/
+html,
+body {
+  height: 100%;
+}
+
+/* 
+  4. Типографика для body
+*/
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 
+  5. Улучшение для медиа по умолчанию
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 
+  6, Убрать типографические стили для инпутов, кнопок и т.д.
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 
+  7. Избегать переполнение текста
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 
+  8. Задать для root 100% и изоляцию 
+*/
+
+#root {
+  height: 100%;
+  isolation: isolate;
+}
